@@ -1,0 +1,27 @@
+{
+  "name": "random",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://ankur1111.github.io/hello/",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "email-validator": "^2.0.4",
+    "gh-pages": "^2.0.1",
+    "react": "^16.4.1",
+    "react-bootstrap": "^0.32.3",
+    "react-dom": "^16.4.1",
+    "react-responsive-modal": "^3.3.0",
+    "react-scripts": "^1.1.5",
+    "react-tabs": "^2.3.0",
+    "react-tilt": "^0.1.4",
+    "tachyons": "^4.11.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "eject": "react-scripts eject"
+  }
+}
