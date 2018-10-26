@@ -30,15 +30,6 @@ class myModal extends Component{
     this.setState({ open: false });
   };
 
-  // onEmailChange = (event) => {
-  //   if (validator.validate(event.target.value)){
-      
-  //   }
-  //   else {
-  //     document.getElementById('mail').style.borderColor = "red";
-  //   }
-  // }
-
   emailValidator = () => {
     if (validator.validate(document.getElementById('mail').value)){
 
