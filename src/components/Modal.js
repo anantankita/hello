@@ -32,17 +32,14 @@ class myModal extends Component{
 
   emailValidator = () => {
     if (validator.validate(document.getElementById('mail').value)){
-
         document.getElementById('mail').style.borderColor = "green";
-
     }
     else {
       document.getElementById('mail').style.borderColor = "red";
       this.setState({
         email: '',
       })
-
-      document.getElementById('mail').placeholder = 'invalid'
+      document.getElementById('mail').placeholder = 'invalid email format'
     }
   }
 
@@ -53,7 +50,7 @@ class myModal extends Component{
   }
 
   validateEmail = (event) => {
-    return validator.validate(this.state.email); // true
+    return validator.validate(this.state.email);
   }
 
   onSubmit = (event) => {
